@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: #f6f8fa;
+    color: #24292f;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* hhheader */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d0d7de;
+    padding: 16px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #24292f;
+    text-decoration: none;
+}
+
+.logo-icon {
+    color: #24292f;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #24292f;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #0969da;
+}
+
+.sign-in-btn {
+    background-color: transparent;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sign-in-btn:hover {
+    background-color: #f6f8fa;
+}
+
+
+.hero {
+    background-color: #0d1117;
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 32px;
+    color: #8b949e;
+}
+
+.trial-btn {
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.trial-btn:hover {
+    background-color: #2ea043;
+}
+
+
+.pricing-section {
+    padding-bottom: 80px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.plans-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    padding: 32px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 360px;
+    position: relative;
+}
+
+.plan-card.featured {
+    border-color: #0969da;
+    box-shadow: 0 0 0 1px #0969da;
+    transform: translateY(-8px);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0969da;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.plan-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.plan-description {
+    color: #57606a;
+    margin-bottom: 24px;
+    min-height: 48px;
+}
+
+.plan-price {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.plan-price span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #57606a;
+}
+
+.plan-features {
+    list-style-type: none;
+    margin-bottom: 32px;
+}
+
+.plan-features li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.plan-features i {
+    color: #1a7f37;
+    margin-right: 8px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.addons-section {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #d0d7de;
+}
+
+.addons-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #57606a;
+    margin-bottom: 12px;
+}
+
+.addons-features li {
+    color: #57606a;
+    font-size: 14px;
+}
+
+.addons-features i {
+    color: #57606a;
+}
+
+.plan-button {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.free-btn {
+    background-color: #2da44e;
+    color: white;
+    border: none;
+}
+
+.free-btn:hover {
+    background-color: #2c974b;
+}
+
+.team-btn {
+    background-color: transparent;
+    border: 1px solid #d0d7de;
+    color: #24292f;
+}
+
+.team-btn:hover {
+    background-color: #f6f8fa;
+}
+
+.enterprise-btn {
+    background-color: transparent;
+    border: 1px solid #0969da;
+    color: #0969da;
+}
+
+.enterprise-btn:hover {
+    background-color: #0969da;
+    color: white;
+}
+
+.trial-card {
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 32px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.trial-card h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.trial-card p {
+    color: #57606a;
+    margin-bottom: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trial-card .trial-btn {
+    padding: 12px 32px;
+}
+
+/* footer */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #d0d7de;
+    padding: 24px 0;
+    margin-top: 48px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: #57606a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #0969da;
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #57606a;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1024px) {
+    .plans-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plan-card {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 48px 0;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    .plan-card {
+        padding: 24px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
