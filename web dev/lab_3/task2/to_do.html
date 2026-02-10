@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="to_do.css">
+
+</head>
+<body>
+    <!-- ustingi qara panel -->
+    <header class="site-header">
+        <div class="header-content">
+            <h1>ToDoList</h1>
+        </div>
+    </header>
+    <div class="content-box">
+    <h2>ToDo List</h2>
+    <div class="add-task">
+                <input type="text" id="newTask" placeholder="New task">
+                <button id="addBtn">Add</button>
+            </div>
+    <!-- main panel -->
+    <div class="container">
+        <div class="content-box">
+            <div class="tasks-container">
+                <ul id="taskList">
+                    <li>
+                        <input type="checkbox" checked>
+                        <span class="task-text completed">First item</span>
+                        <button class="delete-btn" title="Delete task"></button>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span class="task-text">Second item</span>
+                        <button class="delete-btn" title="Delete task"></button>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span class="task-text">Third item</span>
+                        <button class="delete-btn" title="Delete task"></button>
+                    </li>
+                </ul>
+                
+                <div class="empty-message">
+                    No tasks yet. Add your first task above!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
