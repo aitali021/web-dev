@@ -10,7 +10,6 @@
             min-height: 100vh;
         }
         
-        /* Қара панель - бүкіл сайт үшін */
         .site-header {
             background-color: #171717;
             color: rgb(108, 108, 108);
@@ -36,7 +35,6 @@
             font-weight: normal;
         }
         
-        /* Негізгі контент */
         .container {
             max-width: 900px;
             margin: 60px auto;
@@ -97,7 +95,6 @@
             background: #1e4d76;
         }
         
-        /* Тапсырмалар тізімі */
         .tasks-container {
             margin-top: 20px;
             border: 1px solid #ddd;
@@ -148,7 +145,6 @@
             color: #888;
         }
         
-        /* Қызыл қоқыс шелек түймесі */
         .delete-btn {
          
             color: white;
@@ -174,8 +170,6 @@
             content: "🗑️";
         }
         
-        
-        /* Бос тізім үшін */
         .empty-message {
             text-align: center;
             padding: 40px 20px;
@@ -186,4 +180,5 @@
         
         #taskList:empty + .empty-message {
             display: block;
+
         }
