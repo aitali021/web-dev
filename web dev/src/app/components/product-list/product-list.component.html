@@ -1,0 +1,18 @@
+<div class="product-grid">
+  <div *ngFor="let product of products" class="product-card">
+    <img [src]="product.image" [alt]="product.name" class="product-image">
+    <h3>{{ product.name }}</h3>
+    <p class="description">{{ product.description }}</p>
+    <div class="rating">
+      <span *ngFor="let star of [1,2,3,4,5]">
+        <span class="star" [class.filled]="star <= product.rating">★</span>
+      </span>
+      <span class="rating-value">{{ product.rating }}</span>
+    </div>
+    <p class="price">{{ product.price | number }} ₸</p>
+    <div class="actions">
+      <a [href]="product.link" target="_blank" class="buy-btn">Kaspi.kz</a>
+      <button class="share-btn" (click)="shareOnWhatsApp(product)">WhatsApp</button>
+    </div>
+  </div>
+</div>
