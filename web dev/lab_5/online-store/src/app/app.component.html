@@ -1,0 +1,25 @@
+<div class="container">
+  <header>
+    <h1>Kaspi.kz Интернет-магазин</h1>
+  </header>
+
+  <div class="categories">
+    <button *ngFor="let cat of categories" 
+            (click)="selectCategory(cat.id)"
+            [class.active]="selectedCategoryId === cat.id">
+      {{ cat.name }}
+    </button>
+  </div>
+
+  <main>
+    <div *ngIf="selectedCategoryId === null" class="welcome">
+      <h2>Категорияны таңда</h2>
+    </div>
+
+    <app-product-list 
+      *ngIf="selectedCategoryId !== null"
+      [products]="products" 
+      (deleteProduct)="onDeleteProduct($event)">
+    </app-product-list>
+  </main>
+</div>
